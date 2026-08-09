@@ -5,9 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
-import { Contact } from "./pages/contact";
 import { Project } from "./pages/projects";
-import { Skills } from "./pages/skills";
 import { Error404 } from "./pages/404";
 import Root from "./root";
 
@@ -25,16 +23,8 @@ const router = createBrowserRouter([
         Component: About,
       },
       {
-        path: "contact",
-        Component: Contact,
-      },
-      {
         path: "projects",
         Component: Project,
-      },
-      {
-        path: "skills",
-        Component: Skills,
       },
     ],
   },

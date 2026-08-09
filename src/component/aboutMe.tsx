@@ -4,7 +4,7 @@ import profilePlaceholder from "../assets/profile-placeholder.svg"; // Replace w
 
 export function AboutSection() {
   return (
-    <section className="w-270 py-20 relative left-10">
+    <section id="about" className="w-270 py-20 relative left-10">
       {/* Heading */}
       <div className="flex items-center gap-4 mb-16">
         <h2 className="text-4xl font-semibold text-white">about-me</h2>

@@ -2,10 +2,13 @@ import { Link } from "react-router";
 import homeLogo from "../assets/icons/homeLogo.svg";
 import { TextQuote } from "lucide-react";
 import { ProjectDemo } from "../component/projectDemo";
+import { SkillsSection } from "../component/skills/SkillsSection";
+import { ContactSection } from "../component/contactSection";
+import { AboutSection } from "../component/aboutMe";
 
 export function Home() {
   return (
-    <div className="w-fit absolute top-30 left-20 ">
+    <div className="w-fit">
       <div className="flex justify-between items-center">
         <div className="ml-20 flex flex-col gap-3">
           <h1 className="text-2xl text-white">
@@ -25,7 +28,7 @@ export function Home() {
             Contact Me
           </Link>
         </div>
-        <div className="mr-30">
+        <div className="ml-30">
           <img src={homeLogo} alt="Home Logo" />
         </div>
       </div>
@@ -53,8 +56,10 @@ export function Home() {
         </div>
       </div>
 
-      {/* projects */}
       <ProjectDemo />
+      <SkillsSection />
+      <AboutSection />
+      <ContactSection />
     </div>
   );
 }

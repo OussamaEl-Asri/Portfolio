@@ -3,7 +3,7 @@ import { Dots, Square, DoubleSquares } from "./Decorations";
 
 export function SkillsSection() {
   return (
-    <section className="w-270 py-28 relative top-20 left-10">
+    <section id="skills" className="w-270 py-28 relative top-20 left-10">
       <div className="flex items-center gap-4 mb-20">
         <h2 className="text-4xl text-white font-semibold">skills</h2>
 

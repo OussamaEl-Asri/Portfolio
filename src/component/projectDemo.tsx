@@ -5,7 +5,7 @@ import logo from "../assets/logo.jpg";
 
 export function ProjectDemo() {
   return (
-    <section className="relative my-5 top-30 left-10 w-270">
+    <section id="projects" className="relative my-5 top-30 left-10 w-270">
       <div className="flex py-10 justify-between items-center w-fit">
         <h1 className="text-white text-3xl font-semibold">Projects</h1>
         <div className="w-160 ml-5 mt-2 border-t-2 border-[#C778DD]" />
