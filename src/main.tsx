@@ -6,7 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
 import { Project } from "./pages/projects";
-import { Error404 } from "./pages/404";
+import NotFound from "./pages/404";
 import Root from "./root";
 
 const router = createBrowserRouter([
@@ -29,8 +29,8 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "404",
-    Component: Error404,
+    path: "*",
+    Component: NotFound,
   },
 ]);
 
