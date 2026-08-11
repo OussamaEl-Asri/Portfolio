@@ -3,17 +3,22 @@ import { Dots, Square, DoubleSquares } from "./Decorations";
 
 export function SkillsSection() {
   return (
-    <section id="skills" className="w-270 py-28 relative top-20 left-10">
-      <div className="flex items-center gap-4 mb-20">
-        <h2 className="text-4xl text-white font-semibold">skills</h2>
+    <section
+      id="skills"
+      className="w-full lg:w-270 py-16 lg:py-28 relative lg:top-20 left-0 lg:left-10 px-4 sm:px-6 lg:px-0"
+    >
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 mb-10 lg:mb-20">
+        <h2 className="text-3xl lg:text-4xl text-white font-semibold">
+          skills
+        </h2>
 
-        <div className="w-140 ml-5 mt-2 border-t-2 border-[#C778DD]" />
+        <div className="w-full sm:w-40 lg:w-140 sm:ml-5 sm:mt-2 border-t-2 border-[#C778DD]" />
       </div>
 
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-0">
         {/* Left */}
 
-        <div className="relative h-137.5">
+        <div className="relative h-137.5 hidden lg:block">
           <div className="absolute top-10 left-5">
             <Dots />
           </div>
@@ -37,7 +42,7 @@ export function SkillsSection() {
 
         {/* Right */}
 
-        <div className="flex flex-wrap justify-end gap-5">
+        <div className="flex flex-wrap justify-center sm:justify-start lg:justify-end gap-4 sm:gap-5">
           <SkillCard
             title="Languages"
             skills={["TypeScript", "Python", "JavaScript", "C", "C++"]}

@@ -9,7 +9,7 @@ interface smallProject {
 
 export function SmallProjectPlaceholder(props: smallProject) {
   return (
-    <div className="w-80 border border-[#ABB2BF]">
+    <div className="w-80 max-w-full border border-[#ABB2BF]">
       <div className="flex flex-wrap items-center text-[#ABB2BF] border">
         {props.skills.map((skill: string) => (
           <h1 className="ml-3">{skill}</h1>

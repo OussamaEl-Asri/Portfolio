@@ -5,7 +5,7 @@ type SkillCardProps = {
 
 export function SkillCard({ title, skills }: SkillCardProps) {
   return (
-    <div className="border border-[#ABB2BF] w-60">
+    <div className="border border-[#ABB2BF] w-full sm:w-60">
       <div className="border-b border-[#ABB2BF] px-4 py-3">
         <h3 className="text-white font-semibold text-xl">{title}</h3>
       </div>

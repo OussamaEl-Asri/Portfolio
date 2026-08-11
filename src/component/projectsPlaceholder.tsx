@@ -11,11 +11,11 @@ interface Project {
 
 export function ProjectPlaceholder(projectProps: Project) {
   return (
-    <div className="w-80 border border-[#ABB2BF]">
+    <div className="w-80 max-w-full border border-[#ABB2BF]">
       {/* image */}
       <div>
         <img
-          className="w-80 h-80"
+          className="w-full aspect-square object-cover"
           src={projectProps.img}
           alt={projectProps.title + " icon"}
         />

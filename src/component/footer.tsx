@@ -7,13 +7,13 @@ import github from "../assets/icons/github.svg";
 export default function Footer() {
   return (
     <footer className="border-t border-[#ABB2BF]">
-      <div className="w-screen mx-auto px-6 py-10">
-        <div className="flex justify-between items-start">
+      <div className="w-full mx-auto px-4 sm:px-6 py-10">
+        <div className="flex flex-col sm:flex-row justify-between items-center sm:items-start gap-10 sm:gap-6 text-center sm:text-left">
           {/* Left */}
-          <div className="space-y-5">
-            <div className="flex items-center gap-2">
+          <div className="space-y-5 flex flex-col items-center sm:items-start">
+            <div className="flex flex-wrap justify-center sm:justify-start items-center gap-2">
               {/* Logo */}
-              <div className="ml-5 w-5 h-5">
+              <div className="sm:ml-5 w-5 h-5">
                 <img src={icon}></img>
               </div>
 
@@ -23,22 +23,24 @@ export default function Footer() {
 
               <a
                 href="mailto:your@email.com"
-                className="ml-5 text-[#ABB2BF] transition-colors duration-300 hover:text-white"
+                className="sm:ml-5 text-[#ABB2BF] transition-colors duration-300 hover:text-white break-all"
               >
                 oussamaasri81@gmail.com
               </a>
             </div>
 
-            <p className="text-white ml-10 text-lg">Full-Stack AI Engineer</p>
+            <p className="text-white sm:ml-10 text-lg">
+              Full-Stack AI Engineer
+            </p>
           </div>
 
           {/* Social Media */}
-          <div className="mr-25">
-            <h3 className="ml-5 mb-5 text-3xl font-semibold text-white">
+          <div className="sm:mr-25">
+            <h3 className="sm:ml-5 mb-5 text-2xl sm:text-3xl font-semibold text-white text-center sm:text-left">
               Media
             </h3>
 
-            <div className="flex items-center gap-5">
+            <div className="flex items-center justify-center sm:justify-start gap-5">
               {/* GitHub */}
               <Link
                 to="https://github.com/OussamaEl-Asri"

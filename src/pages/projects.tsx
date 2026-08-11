@@ -66,18 +66,18 @@ const completeApp: CompleteApp[] = [
 
 export function Project() {
   return (
-    <div className="w-fit ml-25  mb-40">
-      <div className="flex py-10 justify-between items-center w-fit">
-        <h1 className="text-white text-3xl font-semibold">
+    <div className="w-full lg:w-fit ml-0 lg:ml-25 mb-40 px-4 sm:px-6 lg:px-0">
+      <div className="flex py-10 justify-between items-center w-full lg:w-fit">
+        <h1 className="text-white text-2xl sm:text-3xl font-semibold">
           <span className="text-[#C778DD] font-bold">{"/ "}</span>Projects
         </h1>
       </div>
-      <h1 className="mt-10 mb-10 text-white font-bold text-2xl">
+      <h1 className="mt-10 mb-10 text-white font-bold text-xl sm:text-2xl">
         <span className="text-[#C778DD]">{"# "}</span>Complete-apps
-        <span className="inline-block ml-5 mb-1 w-160 border-t-2 border-[#C778DD]" />
+        <span className="block sm:inline-block mt-3 sm:mt-0 sm:ml-5 mb-1 w-full sm:w-40 lg:w-160 border-t-2 border-[#C778DD]" />
       </h1>
 
-      <div className=" pl-2 flex gap-10 flex-wrap w-fit mt-4">
+      <div className=" pl-2 flex gap-10 flex-wrap justify-center sm:justify-start w-full lg:w-fit mt-4">
         {completeApp.map((project) => (
           <ProjectPlaceholder
             img={project.img}
@@ -88,12 +88,12 @@ export function Project() {
             liveUrl={project.liveUrl}
           />
         ))}
-        <h1 className="mt-10 mb-10 text-white font-bold text-2xl">
+        <h1 className="mt-10 mb-10 text-white font-bold text-xl sm:text-2xl">
           <span className="text-[#C778DD]">{"# "}</span>Small-projects
-          <span className="inline-block ml-5 mb-1 w-160 border-t-2 border-[#C778DD]" />
+          <span className="block sm:inline-block mt-3 sm:mt-0 sm:ml-5 mb-1 w-full sm:w-40 lg:w-160 border-t-2 border-[#C778DD]" />
         </h1>
       </div>
-      <div className=" pl-2 flex gap-10 flex-wrap w-fit mt-4">
+      <div className=" pl-2 flex gap-10 flex-wrap justify-center sm:justify-start w-full lg:w-fit mt-4">
         {smallProject.map((project) => (
           <SmallProjectPlaceholder
             title={project.title}

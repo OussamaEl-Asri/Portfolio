@@ -1,15 +1,17 @@
 export function About() {
   return (
-    <div className="w-fit pl-30 pt-20 mb-40">
-      <div className="flex items-center gap-4 mb-16">
-        <h2 className="text-4xl font-semibold text-white">about-me</h2>
+    <div className="w-full lg:w-fit pl-0 lg:pl-30 pt-14 lg:pt-20 mb-40 px-4 sm:px-6 lg:px-0">
+      <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 mb-10 lg:mb-16">
+        <h2 className="text-3xl lg:text-4xl font-semibold text-white">
+          about-me
+        </h2>
 
-        <div className="w-140 h-0.5 bg-[#C778DD]" />
+        <div className="w-full sm:w-40 lg:w-140 h-0.5 bg-[#C778DD]" />
       </div>
 
       <div>
         <div>
-          <div className="space-y-8 text-[#ABB2BF] text-xl leading-10">
+          <div className="space-y-6 lg:space-y-8 text-[#ABB2BF] text-base sm:text-lg lg:text-xl leading-8 lg:leading-10">
             <span>Who am i?</span>
             <p>
               I'm Oussama, a Software Engineer from Morocco with a strong focus
@@ -73,11 +75,11 @@ export function About() {
               and capable of solving real-world problems.
             </p>
           </div>
-          <div className="mt-10 flex gap-10">
+          <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-10">
             <a
               href="/public/cv.pdf"
               download
-              className="w-35 inline-flex items-center 
+              className="w-full sm:w-35 inline-flex items-center 
           justify-center px-5 py-2 text-sm font-medium 
           text-white border-2 border-[#C778DD] rounded-xl
           transition-all duration-300 hover:bg-[#C778DD] 
@@ -91,7 +93,7 @@ export function About() {
             <a
               href="/public/cv.pdf"
               download
-              className="w-35 inline-flex items-center 
+              className="w-full sm:w-35 inline-flex items-center 
           justify-center px-5 py-2 text-sm font-medium 
           text-white border-2 border-[#C778DD] rounded-xl
           transition-all duration-300 hover:bg-[#C778DD] 
