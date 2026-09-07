@@ -1,7 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 import { ProjectPlaceholder } from "./projectsPlaceholder";
-import logo from "../assets/logo.jpg";
+
+import { apps } from "../project/apps";
 
 export function ProjectDemo() {
   return (
@@ -24,29 +25,23 @@ export function ProjectDemo() {
       </div>
 
       <div className="bg-[#282C33] pl-2 flex gap-10 flex-wrap w-full lg:w-fit mt-4 justify-center sm:justify-start">
-        <ProjectPlaceholder
-          img={logo}
-          title="ChertNodes"
-          description="Minecraft servers hosting"
-          skills={["HTML", "SCSS", "Python", "Flask"]}
-          githubUrl="https://github.com/OussamaEl-Asri"
-          liveUrl="https://github.com/OussamaEl-Asri"
-        />
-        <ProjectPlaceholder
-          img={logo}
-          title="ChertNodes"
-          description="Minecraft servers hosting"
-          skills={["HTML", "SCSS", "Python", "Flask"]}
-          githubUrl="https://github.com/OussamaEl-Asri"
-          liveUrl="https://github.com/OussamaEl-Asri"
-        />
-        <ProjectPlaceholder
-          img={logo}
-          title="ChertNodes"
-          description="Minecraft servers hosting"
-          skills={["HTML", "SCSS", "Python", "Flask"]}
-          githubUrl="https://github.com/OussamaEl-Asri"
-        />
+        {apps.map(
+          (app, ind) =>
+            app.isCompleted && (
+              <ProjectPlaceholder
+                key={ind}
+                title={app.title}
+                description={app.description}
+                skills={app.skills}
+                videoDemo={app.videoDemo}
+                poster={app.poster}
+                isLive={app.isLive}
+                sourceCode={app.sourceCode}
+                isCompleted
+                url={app.url}
+              />
+            )
+        )}
       </div>
     </section>
   );

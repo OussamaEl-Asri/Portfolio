@@ -1,68 +1,8 @@
 import { ProjectPlaceholder } from "../component/projectsPlaceholder";
-import logo from "../assets/logo.jpg";
 import { SmallProjectPlaceholder } from "../component/smallProjectPlaceholder";
 
-interface CompleteApp {
-  title: string;
-  img: string;
-  description: string;
-  liveUrl?: string;
-  githubUrl: string;
-  skills: string[];
-}
-
-interface SmallProject {
-  title: string;
-  description: string;
-  githubUrl: string;
-  skills: string[];
-}
-
-const smallProject: SmallProject[] = [
-  {
-    title: "ChertNodes",
-    description: "Minecraft servers hosting",
-    skills: ["HTML", "SCSS", "Python", "Flask"],
-    githubUrl: "https://github.com/OussamaEl-Asri",
-  },
-  {
-    title: "ChertNodes",
-    description: "Minecraft servers hosting",
-    skills: ["HTML", "SCSS", "Python", "Flask"],
-    githubUrl: "https://github.com/OussamaEl-Asri",
-  },
-  {
-    title: "ChertNodes",
-    description: "Minecraft servers hosting",
-    skills: ["HTML", "SCSS", "Python", "Flask"],
-    githubUrl: "https://github.com/OussamaEl-Asri",
-  },
-  {
-    title: "ChertNodes",
-    description: "Minecraft servers hosting",
-    skills: ["HTML", "SCSS", "Python", "Flask"],
-    githubUrl: "https://github.com/OussamaEl-Asri",
-  },
-];
-
-const completeApp: CompleteApp[] = [
-  {
-    img: logo,
-    title: "ChertNodes",
-    description: "Minecraft servers hosting",
-    skills: ["HTML", "SCSS", "Python", "Flask"],
-    githubUrl: "https://github.com/OussamaEl-Asri",
-    liveUrl: "https://github.com/OussamaEl-Asri",
-  },
-  {
-    img: logo,
-    title: "ChertNodes",
-    description: "Minecraft servers hosting",
-    skills: ["HTML", "SCSS", "Python", "Flask"],
-    githubUrl: "https://github.com/OussamaEl-Asri",
-    liveUrl: "https://github.com/OussamaEl-Asri",
-  },
-];
+import { smallProject } from "../project/smallPr";
+import { apps } from "../project/apps";
 
 export function Project() {
   return (
@@ -73,21 +13,51 @@ export function Project() {
         </h1>
       </div>
       <h1 className="mt-10 mb-10 text-white font-bold text-xl sm:text-2xl">
-        <span className="text-[#C778DD]">{"# "}</span>Complete-apps
+        <span className="text-[#C778DD]">{"# "}</span>Big Apps
         <span className="block sm:inline-block mt-3 sm:mt-0 sm:ml-5 mb-1 w-full sm:w-40 lg:w-160 border-t-2 border-[#C778DD]" />
       </h1>
 
       <div className=" pl-2 flex gap-10 flex-wrap justify-center sm:justify-start w-full lg:w-fit mt-4">
-        {completeApp.map((project) => (
+        {apps.map((app, ind) => (
           <ProjectPlaceholder
-            img={project.img}
-            title={project.title}
-            description={project.description}
-            skills={project.skills}
-            githubUrl={project.githubUrl}
-            liveUrl={project.liveUrl}
+            key={ind}
+            title={app.title}
+            description={app.description}
+            skills={app.skills}
+            videoDemo={app.videoDemo}
+            poster={app.poster}
+            isLive={app.isLive}
+            sourceCode={app.sourceCode}
+            isCompleted
+            url={app.url}
           />
         ))}
+
+        <h1 className="mt-10 mb-10 text-white font-bold text-xl sm:text-2xl">
+          <span className="text-[#C778DD]">{"# "}</span>Currently working on
+          <span className="block sm:inline-block mt-3 sm:mt-0 sm:ml-5 mb-1 w-full sm:w-40 lg:w-160 border-t-2 border-[#C778DD]" />
+        </h1>
+        <ProjectPlaceholder
+          title="AI Studio"
+          description="A multi-agent AI platform providing unified access to specialized assistants for chat, crypto, resume."
+          skills={[
+            "Next.js",
+            "React",
+            "TypeScript",
+            "shadcn",
+            "AI Agents",
+            "LangChain",
+            "FastAPI",
+            "PostgreSQL",
+            "Redis",
+            "Docker",
+          ]}
+          isCompleted
+          poster="/AI-studio/poster.png"
+          videoDemo="/AI-studio/sRecord.mov"
+          sourceCode="https://github.com/OussamaEl-Asri/studio.git"
+        />
+
         <h1 className="mt-10 mb-10 text-white font-bold text-xl sm:text-2xl">
           <span className="text-[#C778DD]">{"# "}</span>Small-projects
           <span className="block sm:inline-block mt-3 sm:mt-0 sm:ml-5 mb-1 w-full sm:w-40 lg:w-160 border-t-2 border-[#C778DD]" />
@@ -99,7 +69,10 @@ export function Project() {
             title={project.title}
             description={project.description}
             skills={project.skills}
-            githubUrl={project.githubUrl}
+            isCompleted
+            videoDemo={project.videoDemo}
+            poster={project.poster}
+            sourceCode={project.sourceCode}
           />
         ))}
       </div>

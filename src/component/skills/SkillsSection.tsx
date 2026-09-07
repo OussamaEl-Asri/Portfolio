@@ -50,7 +50,7 @@ export function SkillsSection() {
 
           <SkillCard
             title="Databases"
-            skills={["PostgreSQL", "SQLite", "MongoDB"]}
+            skills={["PostgreSQL", "SQLite", "Redis", "PRISMA ORM"]}
           />
 
           <SkillCard
@@ -60,17 +60,32 @@ export function SkillsSection() {
 
           <SkillCard
             title="Frameworks"
-            skills={["React", "FastAPI", "Django", "Flask", "Tailwind"]}
+            skills={[
+              "React",
+              "Nextjs",
+              "Express",
+              "FastAPI",
+              "Django",
+              "Flask",
+              "Tailwind",
+            ]}
           />
 
           <SkillCard
             title="AI"
-            skills={["LangChain", "Ollama", "RAG", "ChromaDB"]}
+            skills={[
+              "LangChain",
+              "Ollama",
+              "RAG",
+              "ChromaDB",
+              "AI Agents",
+              "Crew AI",
+            ]}
           />
 
           <SkillCard
             title="Cloud"
-            skills={["Docker", "GitHub Actions", "Vercel"]}
+            skills={["Docker", "Docker compose", "GitHub Actions", "Vercel"]}
           />
         </div>
       </div>
