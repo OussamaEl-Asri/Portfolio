@@ -12,7 +12,7 @@ export const apps: projectType[] = [
         sourceCode: "https://github.com/OussamaEl-Asri/Portfolio.git",
         isCompleted: true,
         isLive: true,
-        url: "",
+        url: "https://portfolio-gray-two-93.vercel.app/",
     },
 
     // ft_transcender
