@@ -8,7 +8,7 @@ export const apps: projectType[] = [
         description: "A modern personal portfolio showcasing projects, technical skills, experience, and achievements through an interactive responsive interface.",
         skills: ["React", "Typescript", "react-router", "Tailwind CSS", "npm"], 
         poster:"/portfolio/poster.png",
-        videoDemo: "/portfolio/record.mov",
+        videoDemo: "https://jxhrtcjl3epzp802.public.blob.vercel-storage.com/portfolio/record.mov",
         sourceCode: "https://github.com/OussamaEl-Asri/Portfolio.git",
         isCompleted: true,
         isLive: true,
@@ -23,7 +23,7 @@ export const apps: projectType[] = [
             "SQLite", "Python", "Flask", "LangChain", "Ollama","Gunicorn",
              "Docker & Docker Compose", "Nginx"], 
         poster:"/ft_transcender/poster.png",
-        videoDemo: "/ft_transcender/record.mov",
+        videoDemo: "https://jxhrtcjl3epzp802.public.blob.vercel-storage.com/ft_transcender/record.mov",
         sourceCode: "https://github.com/OussamaEl-Asri/ft_transcendence.git",
         isCompleted: true,
         isLive: false
@@ -35,7 +35,7 @@ export const apps: projectType[] = [
         description: "Explore weather forecasts, manage saved data, discover locations, and find video vlogs for destinations.",
         skills: ["Python","FastAPI", "SQLModel", "PostgreSQL", "uv", "React", "Tailwind CSS", "npm"], 
         poster:"/weatherApp/poster.png",
-        videoDemo: "/weatherApp/sRecord.mov",
+        videoDemo: "https://jxhrtcjl3epzp802.public.blob.vercel-storage.com/weather-app/sRecord.mov",
         sourceCode: "https://github.com/OussamaEl-Asri/weatherApp.git",
         isCompleted: true,
         isLive: false

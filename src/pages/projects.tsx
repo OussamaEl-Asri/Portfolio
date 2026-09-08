@@ -54,7 +54,7 @@ export function Project() {
           ]}
           isCompleted
           poster="/AI-studio/poster.png"
-          videoDemo="/AI-studio/sRecord.mov"
+          videoDemo="https://jxhrtcjl3epzp802.public.blob.vercel-storage.com/AI-studio/sRecord.mov"
           sourceCode="https://github.com/OussamaEl-Asri/studio.git"
         />
 
