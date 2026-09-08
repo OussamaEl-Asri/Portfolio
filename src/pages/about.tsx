@@ -77,8 +77,9 @@ export function About() {
           </div>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-10">
             <a
-              href="/public/Oussama_El-Asri_Resume.pdf"
+              href="https://jxhrtcjl3epzp802.public.blob.vercel-storage.com/info/Oussama_El-Asri_Resume.pdf"
               download
+              target="_blank"
               className="w-full sm:w-35 inline-flex items-center 
           justify-center px-5 py-2 text-sm font-medium 
           text-white border-2 border-[#C778DD] rounded-xl
@@ -91,8 +92,9 @@ export function About() {
             </a>
 
             <a
-              href="/public/Oussama_El-Asri_CV.pdf"
+              href="https://jxhrtcjl3epzp802.public.blob.vercel-storage.com/info/Oussama_El-Asri_CV.pdf"
               download
+              target="_blank"
               className="w-full sm:w-35 inline-flex items-center 
           justify-center px-5 py-2 text-sm font-medium 
           text-white border-2 border-[#C778DD] rounded-xl
