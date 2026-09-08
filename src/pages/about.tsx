@@ -77,7 +77,7 @@ export function About() {
           </div>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-10">
             <a
-              href="/public/cv.pdf"
+              href="/public/Oussama_El-Asri_Resume.pdf"
               download
               className="w-full sm:w-35 inline-flex items-center 
           justify-center px-5 py-2 text-sm font-medium 
@@ -91,7 +91,7 @@ export function About() {
             </a>
 
             <a
-              href="/public/cv.pdf"
+              href="/public/Oussama_El-Asri_CV.pdf"
               download
               className="w-full sm:w-35 inline-flex items-center 
           justify-center px-5 py-2 text-sm font-medium 
